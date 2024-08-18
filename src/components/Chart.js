@@ -344,7 +344,7 @@ const ChartComponent = () => {
 
     return (
         <div ref={chartRef} className="p-4 w-full md:w-[70vw] relative" style={{ backgroundColor: isFullscreen ? '#f3f4f6' : '' }}>
-            <div className="flex justify-between mb-2 text-sm font-semibold flex-wrap gap-2">
+            <div className="flex justify-between mb-2 text-sm  flex-wrap gap-2">
                 <div className="flex items-center gap-3 flex-wrap justify-between sm:justify-normal">
                     <div
                         className="flex items-center gap-1 text-sm content-center cursor-pointer group"
