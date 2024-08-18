@@ -22,11 +22,11 @@ const Header = () => {
 
     return (
         <div className="p-5">
-            <h1 className="text-7xl font-semibold relative">
+            <h1 className="text-5xl font-semibold relative">
                 {price !== null ? price.toFixed(2) : 'Loading...'}
                 <span className={`text-4xl absolute mt-2 top-[5px] text-gray-400 ${price==null?'hidden':''}`}>USD</span>
             </h1>
-            <p className={`text-lg ${change > 0 ? 'text-green-500' : 'text-red-500'}`}>
+            <p className={`text-sm ${change > 0 ? 'text-green-500' : 'text-red-500'}`}>
                 {change !== null ? `${change > 0 ? '+' : ''}${change.toFixed(2)} (${((change / (price - change)) * 100).toFixed(2)}%)` : 'Loading...'}
             </p>
         </div>
