@@ -1,0 +1,4 @@
+/* Add this CSS to your global stylesheet or CSS module */
+:fullscreen {
+    background-color: #fff !important; /* Ensure the fullscreen background is white */
+}
