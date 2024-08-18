@@ -22,7 +22,7 @@ const Header = () => {
 
     return (
         <div className="p-5">
-            <h1 className="text-5xl font-bold relative">
+            <h1 className="text-5xl font-semibold relative">
                 {price !== null ? price.toFixed(2) : 'Loading...'}
                 <span className={`text-sm absolute top-[5px] text-gray-400 ${price==null?'hidden':''}`}>USD</span>
             </h1>
