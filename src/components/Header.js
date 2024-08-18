@@ -7,7 +7,7 @@ const Header = () => {
 
     useEffect(() => {
         // Fetch stock data from the API
-        axios.get('https://finnhub.io/api/v1/quote?symbol=TSLA&token=cr07cnpr01qh7uf2oc50cr07cnpr01qh7uf2oc5g')
+        axios.get('https://finnhub.io/api/v1/quote?symbol=GOOG&token=cr07cnpr01qh7uf2oc50cr07cnpr01qh7uf2oc5g')
             .then(response => {
                 const { c: currentPrice, pc: previousClose } = response.data;
                 // Calculate the change in price
